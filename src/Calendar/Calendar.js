@@ -105,7 +105,7 @@ const Calendar = ({ date }) => {
                     dateArray.map((i, e) => {
                         return (
 
-                            i === (DD - 0) ? <div key={e} className='calendar-selectedDate'>{i}</div> : i === " " ? <div key={e}>{i}</div> : <div key={e} className='calendar-Dates'>{i}</div>
+                            i === (DD - 0) ? <div key={e} data-testid="calendar-date" className='calendar-selectedDate'>{i}</div> : i === " " ? <div key={e}>{i}</div> : <div key={e} data-testid="calendar-date" className='calendar-Dates'>{i}</div>
                         )
                     })
                 }
